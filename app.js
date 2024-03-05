@@ -28,8 +28,8 @@ app.get('/Home', v , (req,res)=>{
         res.end(data);
     });
 });
-app.get('/Services', v , (req,res)=>{
-    fs.readFile('./public/Services.html','utf8',(err,data)=>{
+app.get('/Service', v , (req,res)=>{
+    fs.readFile('./public/Service.html','utf8',(err,data)=>{
         err?res.end('File not found')&& console.error(err):
         res.end(data);
     });
